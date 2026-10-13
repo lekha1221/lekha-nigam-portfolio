@@ -3,214 +3,314 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Lekha Nigam: Data Scientist</title>
+    <title>Lekha Nigam · Data Science &amp; Customer Intelligence</title>
     <meta
       name="description"
-      content="Portfolio of Lekha Nigam, a data scientist at ASBL. Case studies in market intelligence, prospect ranking, email intelligence, and RAG."
+      content="Growth Associate at ASBL. Market intelligence, prospect models, CRM email intelligence, and RAG. Based in Hyderabad."
     />
+    <meta property="og:title" content="Lekha Nigam · Data Science &amp; Customer Intelligence" />
+    <meta
+      property="og:description"
+      content="Growth Associate at ASBL. Market intelligence, prospect models, CRM email intelligence, and RAG."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lekha-nigam-portfolio.vercel.app/" />
+    <meta property="og:image" content="https://lekha-nigam-portfolio.vercel.app/assets/lekha.jpg" />
+    <link rel="canonical" href="https://lekha-nigam-portfolio.vercel.app/" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,680&family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,560;0,9..144,680;1,9..144,400;1,9..144,560&family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@340;420;520&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="editorial.css" />
   </head>
   <body>
     <a class="skip" href="#work">Skip to work</a>
-    <header class="nav">
-      <div class="wrap nav-inner">
-        <a class="mark" href="#top">Lekha Nigam</a>
-        <nav class="nav-links" id="nav-links">
-          <a href="#work" aria-current="page">Work</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-          <a class="nav-cta" href="assets/LekhaNigam_Resume.pdf" download>Resume</a>
-        </nav>
-        <button class="menu" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
-      </div>
+
+    <header class="mast">
+      <a class="mark" href="#top">LN</a>
+      <p class="mast-issue">Field Notes · No. 01 · 2026</p>
+      <nav class="nav-links" id="nav-links">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-resume" href="assets/LekhaNigam_Resume.pdf" download>Resume</a>
+      </nav>
+      <button class="menu" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
     </header>
 
     <main id="top">
-      <section class="wrap hero">
-        <div class="hero-copy">
-          <p class="kicker">Data Science · Customer Intelligence · Hyderabad</p>
-          <h1>I turn messy markets and funnels into models a team can use on Monday.</h1>
-          <p class="lede">
-            Growth Associate, Data Science and Customer Intelligence at ASBL. Recruiters: six case studies,
-            each with a problem, an approach, and a number.
-          </p>
-          <div class="hero-actions">
-            <a class="btn" href="#work">View my work</a>
-            <a class="btn btn-ghost" href="#contact">Contact me</a>
-          </div>
-        </div>
-        <figure class="hero-photo portrait">
-          <img src="assets/lekha.jpg" alt="Portrait of Lekha Nigam" width="420" height="420" />
-        </figure>
-      </section>
-
-      <section id="work" class="section">
-        <div class="wrap">
-          <div class="section-head">
-            <div>
-              <p class="kicker">Selected work</p>
-              <h2>Named systems. Measured results.</h2>
+      <section class="hero">
+        <p class="eyebrow">Growth Associate · Data Science · Customer Intelligence</p>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <h1>
+              <span>Lekha</span>
+              <em>Nigam</em>
+            </h1>
+            <p class="lede">
+              I turn messy markets, funnels, and inboxes into models a growth
+              team can use on Monday.
+            </p>
+            <p class="hero-meta">ASBL · previously IBM SkillsBuild · B.Tech CSE, AKGEC</p>
+            <div class="hero-links">
+              <a href="mailto:lekhanigam1221@gmail.com">Email</a>
+              <a href="https://www.linkedin.com/in/lekha-nigam/" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="https://github.com/lekha1221" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://www.youtube.com/@learningday3" target="_blank" rel="noreferrer">YouTube</a>
             </div>
           </div>
-          <div class="filters" data-filters role="group" aria-label="Filter projects by type">
-            <button type="button" data-filter="all" aria-pressed="true">All</button>
-            <button type="button" data-filter="market" aria-pressed="false">Market</button>
-            <button type="button" data-filter="models" aria-pressed="false">Models</button>
-            <button type="button" data-filter="language" aria-pressed="false">Language</button>
-            <button type="button" data-filter="analytics" aria-pressed="false">Analytics</button>
-          </div>
-          <div class="grid">
-            <a class="card" href="work/re-analyze.html" data-types="market">
-              <p class="card-type">ASBL</p>
-              <p class="card-name">RE·ANALYZE <span>Market Intelligence</span></p>
-              <h3>43,022 Hyderabad projects, one clean map</h3>
-              <p>Seven sources, fuzzy-deduped, then a Flask dashboard people actually open.</p>
-              <p class="card-result">View case study</p>
-            </a>
-            <a class="card" href="work/kalbhojaditya.html" data-types="models">
-              <p class="card-type">ASBL</p>
-              <p class="card-name">KALBHOJADITYA <span>Prospect Intelligence</span></p>
-              <h3>Top-tier prospects convert at 3.2×</h3>
-              <p>XGBoost on 20,000+ site-visit leads. Daily scoring since August 2025.</p>
-              <p class="card-result">View case study</p>
-            </a>
-            <a class="card" href="work/samvaad.html" data-types="language">
-              <p class="card-type">ASBL</p>
-              <p class="card-name">SAMVAAD <span>CRM Email Intelligence</span></p>
-              <h3>70% less time reading the CRM inbox</h3>
-              <p>An LLM pipeline that sorts 15,000+ emails by issue and status at 90% accuracy.</p>
-              <p class="card-result">View case study</p>
-            </a>
-            <a class="card" href="work/ava.html" data-types="language">
-              <p class="card-type">ASBL</p>
-              <p class="card-name">AVA <span>Conversational AI Assistant</span></p>
-              <h3>Chat accuracy from 72% to 91%</h3>
-              <p>A RAG assistant over 200+ documents, fixed with a 300-question eval set.</p>
-              <p class="card-result">View case study</p>
-            </a>
-            <a class="card" href="work/ecogaze.html" data-types="analytics">
-              <p class="card-type">IBM SkillsBuild</p>
-              <p class="card-name">EcoGaze <span>Climate Change Analysis</span></p>
-              <h3>0.9+ correlation between CO₂ and temperature</h3>
-              <p>Fifteen years of climate data, Power BI reporting 30% faster than the old pack.</p>
-              <p class="card-result">View case study</p>
-            </a>
-            <a class="card" href="work/dashboard-diaries.html" data-types="analytics">
-              <p class="card-type">ASBL</p>
-              <p class="card-name">Dashboard Diaries <span>Metabase dashboards</span></p>
-              <h3>10+ hours a week back for 20 stakeholders</h3>
-              <p>Twelve-plus dashboards on lead funnel, marketing, sales, and customer KPIs.</p>
-              <p class="card-result">View case study</p>
-            </a>
-          </div>
+          <figure class="portrait">
+            <img src="assets/lekha.jpg" alt="Portrait of Lekha Nigam" width="420" height="420" />
+          </figure>
         </div>
       </section>
 
-      <section id="about" class="section">
-        <div class="wrap">
-          <div class="section-head">
-            <div>
-              <p class="kicker">About</p>
-              <h2>A data person who likes the unglamorous middle.</h2>
-            </div>
-          </div>
-          <div class="about-grid">
-            <div class="about-copy">
-              <p>
-                I sit between a messy CRM and a sales team that needs a ranked
-                list, not another notebook. Most of my week is cleaning, joining,
-                checking for leakage, and putting the answer on a map or in a
-                dashboard someone already opens.
-              </p>
-              <p>
-                B.Tech CSE from Ajay Kumar Garg Engineering College (CGPA 8.25).
-                IBM SkillsBuild intern on climate reporting before ASBL. I also
-                work with
-                <a href="https://www.linkedin.com/company/slumswaraj" target="_blank" rel="noreferrer">Slum Swaraj Foundation</a>,
-                an NGO that spreads education: HR and volunteer coordination
-                since 2022. Off the clock I help run
-                <a href="https://www.youtube.com/@learningday3" target="_blank" rel="noreferrer">Learning Day</a>:
-                12,000+ polytechnic students, communication and soft skills.
-                State-level basketball. National-level taekwondo.
-              </p>
-              <p>
-                Open to data science, applied ML, and growth analytics roles
-                where the model has to live in production.
-              </p>
-            </div>
-            <aside class="skills" aria-label="Skills">
-              <h3>Tools</h3>
-              <dl>
-                <div>
-                  <dt>Languages</dt>
-                  <dd>Python, SQL</dd>
-                </div>
-                <div>
-                  <dt>Machine learning</dt>
-                  <dd>scikit-learn, XGBoost, forecasting, validation</dd>
-                </div>
-                <div>
-                  <dt>NLP &amp; GenAI</dt>
-                  <dd>LLMs, RAG, extraction, eval sets</dd>
-                </div>
-                <div>
-                  <dt>Production</dt>
-                  <dd>AWS, MongoDB, Flask, Git, CI/CD</dd>
-                </div>
-                <div>
-                  <dt>BI</dt>
-                  <dd>Power BI, Tableau, Metabase, Excel</dd>
-                </div>
-              </dl>
-            </aside>
-          </div>
-        </div>
-      </section>
 
-      <section id="contact" class="section">
-        <div class="wrap">
-          <div class="section-head">
-            <div>
-              <p class="kicker">Contact</p>
-              <h2>I’m open to the next role. Say hello.</h2>
-            </div>
-          </div>
-          <div class="contact-grid">
-            <form class="form-wrap" id="contact-form" novalidate>
-              <label for="name">Name</label>
-              <input id="name" name="name" type="text" autocomplete="name" required />
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" autocomplete="email" required />
-              <label for="message">Message</label>
-              <textarea id="message" name="message" required></textarea>
-              <button class="btn" type="submit">Send message</button>
-              <p class="form-status" id="form-status" role="status"></p>
-            </form>
-            <ul class="socials">
-              <li><a href="mailto:lekhanigam1221@gmail.com">lekhanigam1221@gmail.com</a></li>
-              <li><a href="https://www.linkedin.com/in/lekha-nigam/" target="_blank" rel="noreferrer">LinkedIn</a></li>
-              <li><a href="https://github.com/lekha1221" target="_blank" rel="noreferrer">GitHub</a></li>
-              <li><a href="https://www.hackerrank.com/profile/lekhanigam1210" target="_blank" rel="noreferrer">HackerRank</a></li>
-              <li><a href="https://www.youtube.com/@learningday3" target="_blank" rel="noreferrer">YouTube</a></li>
-              <li><a href="assets/LekhaNigam_Resume.pdf" download>Download resume</a></li>
+      <section id="work" class="section work">
+        <div class="section-head">
+          <p class="eyebrow">Selected work</p>
+          <h2>Six systems that changed what the team did next.</h2>
+        </div>
+
+        <article class="case feature" id="case-01">
+          <p class="case-index" aria-hidden="true">01</p>
+          <div class="case-body">
+            <p class="case-kicker">ASBL · Cover story</p>
+            <h3>RE·ANALYZE</h3>
+            <p class="case-aka">Market Intelligence</p>
+            <blockquote class="pull">
+              43,022 Hyderabad projects. Seven sources. One map people actually open.
+            </blockquote>
+            <p>
+              A Flask and MongoDB product that folds seven real-estate sources
+              into one Hyderabad dataset: 43,022 projects, fuzzy-deduped at
+              ≥0.85 similarity, then mapped. Amenities on 10,949 records were
+              enriched with Gemini Flash. Analysts pick a locality or a radius
+              and read pricing, inventory, infrastructure, and buyer demand in
+              one sitting.
+            </p>
+            <ul class="metrics">
+              <li><b>43,022</b> projects</li>
+              <li><b>7</b> sources</li>
+              <li><b>10,949</b> enriched</li>
             </ul>
+            <p class="tags">Python · Flask · MongoDB · Leaflet · ECharts · Gemini</p>
           </div>
+        </article>
+
+        <article class="case" id="case-02">
+          <p class="case-index" aria-hidden="true">02</p>
+          <div class="case-body">
+            <p class="case-kicker">ASBL</p>
+            <h3>KALBHOJADITYA</h3>
+            <p class="case-aka">Prospect Intelligence</p>
+            <p>
+              An XGBoost model that ranks 20,000+ post-site-visit prospects
+              across six projects into four intent tiers. Built from CRM,
+              site-visit, call, and WhatsApp data; 60+ behavioral features
+              from a 1.2M-lead CRM, validated on later time periods so nothing
+              leaked forward. It has scored daily since August 2025. The top
+              tier converts at 3.2× the average.
+            </p>
+            <ul class="metrics">
+              <li><b>0.84</b> ROC-AUC</li>
+              <li><b>3.2×</b> top-tier conversion</li>
+              <li><b>60+</b> features</li>
+            </ul>
+            <p class="tags">XGBoost · feature engineering · time-aware validation · AWS</p>
+          </div>
+        </article>
+
+        <article class="case" id="case-03">
+          <p class="case-index" aria-hidden="true">03</p>
+          <div class="case-body">
+            <p class="case-kicker">ASBL</p>
+            <h3>SAMVAAD</h3>
+            <p class="case-aka">CRM Email Intelligence</p>
+            <p>
+              An LLM pipeline that reads 15,000+ customer emails and sorts them
+              by issue type and resolution status at 90% accuracy. It surfaced
+              12 recurring problems and cut manual review by 70%: the inbox
+              stopped being a queue and became a signal.
+            </p>
+            <ul class="metrics">
+              <li><b>15,000+</b> emails</li>
+              <li><b>90%</b> accuracy</li>
+              <li><b>70%</b> less review</li>
+            </ul>
+            <p class="tags">LLMs · text classification · information extraction</p>
+          </div>
+        </article>
+
+        <article class="case" id="case-04">
+          <p class="case-index" aria-hidden="true">04</p>
+          <div class="case-body">
+            <p class="case-kicker">ASBL</p>
+            <h3>AVA</h3>
+            <p class="case-aka">Conversational AI Assistant</p>
+            <p>
+              A RAG assistant over 200+ curated documents. I built a 300-question
+              evaluation set, found the weak answers, and patched the knowledge
+              base until accuracy moved from 72% to 91%. Same idea as the rest
+              of the work: measure first, then ship the fix.
+            </p>
+            <ul class="metrics">
+              <li><b>200+</b> documents</li>
+              <li><b>300</b> eval questions</li>
+              <li><b>72→91%</b> accuracy</li>
+            </ul>
+            <p class="tags">RAG · LLM evaluation · prompt engineering</p>
+          </div>
+        </article>
+
+        <article class="case" id="case-05">
+          <p class="case-index" aria-hidden="true">05</p>
+          <div class="case-body">
+            <p class="case-kicker">IBM SkillsBuild</p>
+            <h3>EcoGaze</h3>
+            <p class="case-aka">Climate Change Analysis</p>
+            <p>
+              Fifteen years of CO₂, temperature, and sea-level data. The
+              headline finding: a 0.9+ correlation between CO₂ concentration
+              and temperature anomaly. Regression and time-series decomposition
+              separated the long-run trend from seasonality. Power BI and Excel
+              models made the reporting repeatable: 30% faster than the old pack.
+            </p>
+            <ul class="metrics">
+              <li><b>15+</b> years of data</li>
+              <li><b>0.9+</b> CO₂-temperature correlation</li>
+              <li><b>30%</b> faster reporting</li>
+            </ul>
+            <p class="tags">Python · Power BI · Excel · time series</p>
+          </div>
+        </article>
+
+        <article class="case" id="case-06">
+          <p class="case-index" aria-hidden="true">06</p>
+          <div class="case-body">
+            <p class="case-kicker">ASBL</p>
+            <h3>Dashboard Diaries</h3>
+            <p class="case-aka">Metabase dashboards</p>
+            <p>
+              Twelve-plus Metabase dashboards on lead funnel, marketing, sales,
+              and customer KPIs, used by 20+ stakeholders. They replaced a
+              weekly scrape of spreadsheets and saved more than ten hours a
+              week. Two of the packs: CRM Dashboard and Lead analysis by
+              current stage.
+            </p>
+            <ul class="metrics">
+              <li><b>12+</b> dashboards</li>
+              <li><b>20+</b> stakeholders</li>
+              <li><b>10+</b> hours saved / week</li>
+            </ul>
+            <p class="tags">Metabase · AWS · CI/CD · monitoring</p>
+          </div>
+        </article>
+      </section>
+
+      <section id="about" class="section about">
+        <div class="section-head">
+          <p class="eyebrow">About</p>
+          <h2>A data person who likes the unglamorous middle.</h2>
         </div>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p class="drop">
+              I work at ASBL as a Growth Associate in Data Science and Customer
+              Intelligence: the seat
+              between a messy CRM and a sales team that needs a ranked list,
+              not another notebook. Most of my week is cleaning, joining,
+              checking for leakage, and putting the answer on a map or in a
+              dashboard someone already opens.
+            </p>
+            <p>
+              Before this I interned with IBM SkillsBuild on climate reporting,
+              and I studied Computer Science at Ajay Kumar Garg Engineering
+              College (CGPA 8.25). I also work with
+              <a href="https://www.linkedin.com/company/slumswaraj" target="_blank" rel="noreferrer">Slum Swaraj Foundation</a>,
+              an NGO that spreads education: HR and volunteer coordination since 2022.
+              Off the clock I help run
+              <a href="https://www.youtube.com/@learningday3" target="_blank" rel="noreferrer">Learning Day</a>,
+              a YouTube classroom for polytechnic students. I am also a
+              state-level basketball player and a national-level taekwondo
+              player: useful training for sitting with a stubborn dataset.
+            </p>
+            <p class="about-note">
+              Currently in Hyderabad. Open to data science, applied ML, and
+              growth analytics roles where the model has to live in production.
+            </p>
+          </div>
+          <aside class="skills" aria-label="Skills">
+            <h3>The kit</h3>
+            <dl>
+              <div>
+                <dt>Languages</dt>
+                <dd>Python, SQL</dd>
+              </div>
+              <div>
+                <dt>Machine learning</dt>
+                <dd>scikit-learn, XGBoost, clustering, forecasting, validation</dd>
+              </div>
+              <div>
+                <dt>NLP &amp; GenAI</dt>
+                <dd>LLMs, RAG, prompt engineering, extraction, eval sets</dd>
+              </div>
+              <div>
+                <dt>Data &amp; stats</dt>
+                <dd>pandas, NumPy, EDA, A/B tests, cohort and funnel analysis</dd>
+              </div>
+              <div>
+                <dt>Production</dt>
+                <dd>AWS (S3, Athena, EC2, ECS), MongoDB, Flask, Git, CI/CD</dd>
+              </div>
+              <div>
+                <dt>BI</dt>
+                <dd>Power BI, Tableau, Metabase, Excel, Google Analytics, PostHog</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+      </section>
+
+      <section id="teaching" class="section teaching">
+        <p class="teaching-num" aria-hidden="true">12,000</p>
+        <div class="section-head">
+          <p class="eyebrow">Teaching</p>
+          <h2>Learning Day: one classroom that never closes.</h2>
+        </div>
+        <p class="teaching-copy">
+          I co-run an educational YouTube channel for polytechnic and ITI
+          students who cannot buy every course. I teach communication and
+          soft skills; the rest of the team covers physics, graphics, and
+          exam prep. 1,400+ videos. The point is the same as the day job:
+          make a hard thing usable.
+        </p>
+        <a class="btn" href="https://www.youtube.com/@learningday3" target="_blank" rel="noreferrer">Watch on YouTube</a>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="section-head">
+          <p class="eyebrow">Contact</p>
+          <h2>Say hello.</h2>
+        </div>
+        <p class="contact-lede">The fastest way is email. I read it.</p>
+        <a class="email" href="mailto:lekhanigam1221@gmail.com">lekhanigam1221@gmail.com</a>
+        <ul class="contact-list">
+          <li><a href="https://www.linkedin.com/in/lekha-nigam/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+          <li><a href="https://github.com/lekha1221" target="_blank" rel="noreferrer">GitHub</a></li>
+          <li><a href="https://www.hackerrank.com/profile/lekhanigam1210" target="_blank" rel="noreferrer">HackerRank</a></li>
+          <li><a href="https://www.youtube.com/@learningday3" target="_blank" rel="noreferrer">YouTube</a></li>
+          <li><a href="assets/LekhaNigam_Resume.pdf" download>Download resume</a></li>
+        </ul>
       </section>
     </main>
 
     <footer class="foot">
-      <div class="wrap foot-inner">
-        <p>© <span id="year">2026</span> Lekha Nigam · Hyderabad</p>
-        <p><a href="#work">Work</a> · <a href="#contact">Contact</a></p>
-      </div>
+      <p>© <span id="year">2026</span> Lekha Nigam</p>
     </footer>
     <script src="script.js"></script>
   </body>
