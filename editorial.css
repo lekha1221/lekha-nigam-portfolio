@@ -384,6 +384,18 @@ img {
   color: var(--forest);
 }
 
+.project-link {
+  margin: 0.9rem 0 0;
+}
+
+.project-link a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--accent);
+  text-underline-offset: 0.22em;
+}
+
 .about-grid {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
