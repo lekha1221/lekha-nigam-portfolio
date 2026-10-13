@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KALBHOJADITYA: 3.2× top-tier conversion · Lekha Nigam</title>
+    <meta name="description" content="Case study: XGBoost prospect ranking that puts the hottest site-visit leads first." />
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,680&family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#content">Skip to content</a>
+    <header class="nav">
+      <div class="wrap nav-inner">
+        <a class="mark" href="../index.html">Lekha Nigam</a>
+        <nav class="nav-links" id="nav-links">
+          <a href="../index.html#work" aria-current="page">Work</a>
+          <a href="../index.html#about">About</a>
+          <a href="../index.html#contact">Contact</a>
+          <a class="nav-cta" href="../assets/LekhaNigam_Resume.pdf" download>Resume</a>
+        </nav>
+        <button class="menu" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      </div>
+    </header>
+    <main id="content">
+      <article class="wrap">
+        <header class="study-hero">
+          <a class="crumb" href="../index.html#work">← All work</a>
+          <p class="kicker">ASBL · in production since Aug 2025</p>
+          <p class="study-name">KALBHOJADITYA <span>· Prospect Intelligence</span></p>
+          <h1>Top-tier prospects convert at 3.2× the average</h1>
+          <p class="lede">After a site visit, every lead looked equally urgent. They were not. Sales needed a daily ranked list, not a gut feel.</p>
+          <p class="meta">
+            <span>Role: modeling + MLOps</span>
+            <span>Stack: XGBoost, Python, AWS, time-aware validation</span>
+          </p>
+        </header>
+        <ul class="metrics">
+          <li><b>0.84</b> ROC-AUC, no leakage</li>
+          <li><b>3.2×</b> conversion in tier 1</li>
+          <li><b>60+</b> behavioral features</li>
+        </ul>
+        <div class="study-grid">
+          <section class="study-block">
+            <h2>Problem</h2>
+            <p>
+              Twenty thousand post-site-visit prospects across six projects sat
+              in a CRM with call logs, WhatsApp threads, and visit recency.
+              Follow-up order was whoever shouted last. High-intent buyers went
+              cold while low-intent ones got the next call.
+            </p>
+          </section>
+          <section class="study-block">
+            <h2>Approach</h2>
+            <p>
+              I built 60+ features from a 1.2M-lead CRM: funnel stage, call
+              activity, visit recency, WhatsApp engagement, website activity.
+              Labels were locked to later time periods so the model could not
+              peek at the future. XGBoost ranked prospects into four intent
+              tiers. A second model covers 200K+ early-stage leads.
+            </p>
+            <p>
+              The pipeline moved to AWS with versioning, CI/CD, daily scoring,
+              and monitoring. Refresh time dropped from two days to under an
+              hour. The voice-agent backend moved to ECS Fargate in the same
+              pass.
+            </p>
+          </section>
+          <section class="study-block">
+            <h2>Result</h2>
+            <p>
+              0.84 ROC-AUC on a clean holdout. The top tier converts at 3.2×
+              the average. The model has scored every day since August 2025:
+              sales opens a list, not a debate.
+            </p>
+            <p>
+              <a href="https://github.com/lekha1221/lead-quality-model" target="_blank" rel="noreferrer">Related notebooks</a>
+            </p>
+          </section>
+        </div>
+        <nav class="pager">
+          <a href="re-analyze.html">← RE·ANALYZE · Market Intelligence</a>
+          <a href="samvaad.html">Next: SAMVAAD · CRM Email Intelligence →</a>
+        </nav>
+      </article>
+    </main>
+    <footer class="foot">
+      <div class="wrap foot-inner">
+        <p>© <span id="year">2026</span> Lekha Nigam</p>
+        <p><a href="../index.html#contact">Contact</a></p>
+      </div>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>

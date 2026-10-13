@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SAMVAAD: 70% less inbox review · Lekha Nigam</title>
+    <meta name="description" content="Case study: LLM pipeline that classifies 15,000+ CRM emails by issue and resolution." />
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,680&family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#content">Skip to content</a>
+    <header class="nav">
+      <div class="wrap nav-inner">
+        <a class="mark" href="../index.html">Lekha Nigam</a>
+        <nav class="nav-links" id="nav-links">
+          <a href="../index.html#work" aria-current="page">Work</a>
+          <a href="../index.html#about">About</a>
+          <a href="../index.html#contact">Contact</a>
+          <a class="nav-cta" href="../assets/LekhaNigam_Resume.pdf" download>Resume</a>
+        </nav>
+        <button class="menu" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      </div>
+    </header>
+    <main id="content">
+      <article class="wrap">
+        <header class="study-hero">
+          <a class="crumb" href="../index.html#work">← All work</a>
+          <p class="kicker">ASBL</p>
+          <p class="study-name">SAMVAAD <span>· CRM Email Intelligence</span></p>
+          <h1>70% less time reading the CRM inbox</h1>
+          <p class="lede">Customer email was a queue. The same twelve problems hid in 15,000 threads. Nobody could see the pattern without reading every one.</p>
+          <p class="meta">
+            <span>Role: NLP / LLM pipeline</span>
+            <span>Stack: Python, LLMs, text classification, extraction</span>
+          </p>
+        </header>
+        <ul class="metrics">
+          <li><b>15,000+</b> emails classified</li>
+          <li><b>90%</b> issue + status accuracy</li>
+          <li><b>70%</b> less manual review</li>
+        </ul>
+        <div class="study-grid">
+          <section class="study-block">
+            <h2>Problem</h2>
+            <p>
+              Service and sales shared one inbox. Payment issues sat next to
+              site-visit follow-ups. Review meant a person and a full day.
+              Leadership asked which issues were recurring. The answer was
+              “we would have to read them.”
+            </p>
+          </section>
+          <section class="study-block">
+            <h2>Approach</h2>
+            <p>
+              I built an LLM pipeline that tags each mail by issue type and
+              resolution status. Prompts were tightened against a labeled
+              sample until accuracy held at 90%. The output is a dashboard
+              slice, not a dump of model text: counts, open vs closed, and
+              the twelve issues that keep coming back.
+            </p>
+          </section>
+          <section class="study-block">
+            <h2>Result</h2>
+            <p>
+              Twelve recurring issues, named. Manual review dropped 70%. The
+              inbox became a signal: which product or process to fix this
+              week, instead of a pile.
+            </p>
+            <p>
+              <a href="https://github.com/lekha1221/CRM-Email-Intelligence" target="_blank" rel="noreferrer">Repository</a>
+            </p>
+          </section>
+        </div>
+        <nav class="pager">
+          <a href="kalbhojaditya.html">← KALBHOJADITYA · Prospect Intelligence</a>
+          <a href="ava.html">Next: AVA · Conversational AI Assistant →</a>
+        </nav>
+      </article>
+    </main>
+    <footer class="foot">
+      <div class="wrap foot-inner">
+        <p>© <span id="year">2026</span> Lekha Nigam</p>
+        <p><a href="../index.html#contact">Contact</a></p>
+      </div>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RE·ANALYZE: 43,022 projects, one map · Lekha Nigam</title>
+    <meta name="description" content="Case study: Hyderabad market intelligence from seven real-estate sources, served as a Flask + MongoDB map." />
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,680&family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#content">Skip to content</a>
+    <header class="nav">
+      <div class="wrap nav-inner">
+        <a class="mark" href="../index.html">Lekha Nigam</a>
+        <nav class="nav-links" id="nav-links">
+          <a href="../index.html#work" aria-current="page">Work</a>
+          <a href="../index.html#about">About</a>
+          <a href="../index.html#contact">Contact</a>
+          <a class="nav-cta" href="../assets/LekhaNigam_Resume.pdf" download>Resume</a>
+        </nav>
+        <button class="menu" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      </div>
+    </header>
+    <main id="content">
+      <article class="wrap">
+        <header class="study-hero">
+          <a class="crumb" href="../index.html#work">← All work</a>
+          <p class="kicker">ASBL · 2024-present</p>
+          <p class="study-name">RE·ANALYZE <span>· Market Intelligence</span></p>
+          <h1>43,022 Hyderabad projects, one clean map</h1>
+          <p class="lede">Growth needed a single view of supply, price, and demand. The data lived in seven places and disagreed with itself.</p>
+          <p class="meta">
+            <span>Role: data + product</span>
+            <span>Stack: Python, Flask, MongoDB, Leaflet, ECharts, Gemini</span>
+          </p>
+        </header>
+        <ul class="metrics">
+          <li><b>43,022</b> projects in one dataset</li>
+          <li><b>7</b> sources, source-priority rules</li>
+          <li><b>10,949</b> records amenity-enriched</li>
+        </ul>
+        <div class="study-grid">
+          <section class="study-block">
+            <h2>Problem</h2>
+            <p>
+              Hyderabad supply was split across listings, internal files, and
+              scraped feeds. The same tower showed up three times with three
+              prices. Analysts could not answer “what is selling in this
+              locality, in this radius, at this budget?” without a week of
+              spreadsheet work.
+            </p>
+          </section>
+          <section class="study-block">
+            <h2>Approach</h2>
+            <p>
+              I built a pipeline that merges the seven sources with
+              source-priority rules and fuzzy deduplication at ≥0.85 similarity,
+              then quality checks. Amenities for 10,949 projects were enriched
+              with Gemini Flash. A small Flask app reads MongoDB and draws
+              Leaflet maps plus ECharts panels: pick a locality or a radius,
+              see inventory, pricing, infrastructure, and buyer demand.
+            </p>
+            <p>
+              A 500-person launch survey sat on the same stack: 61% preferred
+              3 BHK, median budget ₹1.71 Cr, gated-community demand up from
+              25% to 43%. That became three buyer personas, not a slide of
+              charts.
+            </p>
+          </section>
+          <section class="study-block">
+            <h2>Result</h2>
+            <p>
+              One dataset. One map. Analysts stopped reconciling files and
+              started asking market questions. The product is seven files,
+              no separate frontend build, so it stays shippable.
+            </p>
+            <p>
+              <a href="https://github.com/lekha1221/Market-Intelligence" target="_blank" rel="noreferrer">Repository</a>
+            </p>
+          </section>
+        </div>
+        <nav class="pager">
+          <a href="../index.html#work">All work</a>
+          <a href="kalbhojaditya.html">Next: KALBHOJADITYA · Prospect Intelligence →</a>
+        </nav>
+      </article>
+    </main>
+    <footer class="foot">
+      <div class="wrap foot-inner">
+        <p>© <span id="year">2026</span> Lekha Nigam</p>
+        <p><a href="../index.html#contact">Contact</a></p>
+      </div>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>

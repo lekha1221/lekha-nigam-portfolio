@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AVA: 72% to 91% chat accuracy · Lekha Nigam</title>
+    <meta name="description" content="Case study: RAG chatbot evaluated on 300 questions and lifted from 72% to 91% accuracy." />
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,680&family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#content">Skip to content</a>
+    <header class="nav">
+      <div class="wrap nav-inner">
+        <a class="mark" href="../index.html">Lekha Nigam</a>
+        <nav class="nav-links" id="nav-links">
+          <a href="../index.html#work" aria-current="page">Work</a>
+          <a href="../index.html#about">About</a>
+          <a href="../index.html#contact">Contact</a>
+          <a class="nav-cta" href="../assets/LekhaNigam_Resume.pdf" download>Resume</a>
+        </nav>
+        <button class="menu" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      </div>
+    </header>
+    <main id="content">
+      <article class="wrap">
+        <header class="study-hero">
+          <a class="crumb" href="../index.html#work">← All work</a>
+          <p class="kicker">ASBL</p>
+          <p class="study-name">AVA <span>· Conversational AI Assistant</span></p>
+          <h1>Chat accuracy from 72% to 91%</h1>
+          <p class="lede">The assistant sounded fluent and still missed. Fluency is not a metric. A 300-question test set is.</p>
+          <p class="meta">
+            <span>Role: RAG + evaluation</span>
+            <span>Stack: LLMs, retrieval, prompt engineering, eval set</span>
+          </p>
+        </header>
+        <ul class="metrics">
+          <li><b>200+</b> curated documents</li>
+          <li><b>300</b> evaluation questions</li>
+          <li><b>72→91%</b> answer accuracy</li>
+        </ul>
+        <div class="study-grid">
+          <section class="study-block">
+            <h2>Problem</h2>
+            <p>
+              Buyers asked project, payment, and possession questions in chat.
+              The first RAG build retrieved something and answered anyway.
+              Demoed well. Failed the questions that mattered: pricing rules,
+              possession dates, documents that contradicted each other.
+            </p>
+          </section>
+          <section class="study-block">
+            <h2>Approach</h2>
+            <p>
+              I curated 200+ source documents and wrote a 300-question
+              evaluation set that mirrored real chats, not brochure copy. Each
+              miss pointed at a gap: missing chunk, stale fact, or a prompt
+              that let the model guess. Fix the knowledge base, re-run the
+              set, keep only the lifts that hold.
+            </p>
+          </section>
+          <section class="study-block">
+            <h2>Result</h2>
+            <p>
+              Accuracy moved from 72% to 91% on the same test. The useful
+              part was not the model swap. It was treating the chatbot like
+              any other model: a holdout, a miss list, and a patch.
+            </p>
+          </section>
+        </div>
+        <nav class="pager">
+          <a href="samvaad.html">← SAMVAAD · CRM Email Intelligence</a>
+          <a href="ecogaze.html">Next: EcoGaze · Climate Change Analysis →</a>
+        </nav>
+      </article>
+    </main>
+    <footer class="foot">
+      <div class="wrap foot-inner">
+        <p>© <span id="year">2026</span> Lekha Nigam</p>
+        <p><a href="../index.html#contact">Contact</a></p>
+      </div>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>
