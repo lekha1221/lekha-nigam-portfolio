@@ -385,6 +385,9 @@ img {
 }
 
 .project-link {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1.25rem;
   margin: 0.9rem 0 0;
 }
 
@@ -394,6 +397,12 @@ img {
   min-height: 44px;
   color: var(--accent);
   text-underline-offset: 0.22em;
+}
+
+.how-to {
+  margin: 0.55rem 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
 }
 
 .about-grid {

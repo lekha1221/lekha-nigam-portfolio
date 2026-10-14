@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RE·ANALYZE · Market Intelligence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+      :root {
+        --bg: #f0f4f9;
+        --card: #fff;
+        --ink: #0f172a;
+        --muted: #64748b;
+        --line: #dde3ee;
+        --accent: #2563eb;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Inter, sans-serif;
+        background: var(--bg);
+        color: var(--ink);
+      }
+      .demo-banner {
+        margin: 0;
+        padding: 0.65rem 1rem;
+        background: #0f172a;
+        color: #f8fafc;
+        font-family: "JetBrains Mono", monospace;
+        font-size: 0.78rem;
+      }
+      header {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: space-between;
+        align-items: end;
+        padding: 1.4rem 1.2rem 1rem;
+        border-bottom: 1px solid var(--line);
+        background: var(--card);
+      }
+      h1 { margin: 0.15rem 0 0; font-size: 1.6rem; }
+      .aka { margin: 0; color: var(--muted); }
+      label { display: grid; gap: 0.25rem; font-size: 0.8rem; color: var(--muted); }
+      select, button {
+        min-height: 44px;
+        border-radius: 8px;
+        border: 1px solid var(--line);
+        font: inherit;
+      }
+      select { padding: 0 0.7rem; background: #fff; min-width: 12rem; }
+      button {
+        padding: 0 1.1rem;
+        background: var(--accent);
+        color: #fff;
+        border-color: var(--accent);
+        cursor: pointer;
+      }
+      main { display: grid; gap: 1rem; padding: 1rem 1.2rem 2rem; }
+      .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); gap: 0.75rem; }
+      .kpi, .panel {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 0.9rem 1rem;
+      }
+      .kpi b { display: block; font-size: 1.35rem; }
+      .kpi span, .panel p { color: var(--muted); font-size: 0.85rem; }
+      .grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 1rem; }
+      #map { height: 360px; border-radius: 8px; }
+      #mix { height: 260px; }
+      table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+      th, td { text-align: left; padding: 0.45rem 0.2rem; border-bottom: 1px solid var(--line); }
+      @media (max-width: 800px) { .grid { grid-template-columns: 1fr; } }
+    </style>
+  </head>
+  <body>
+    <p class="demo-banner">Public demo · sample Hyderabad slice. Production reads 43,022 projects from MongoDB and is not public.</p>
+    <header>
+      <div>
+        <p class="aka">ASBL · Market Intelligence</p>
+        <h1>RE·ANALYZE</h1>
+      </div>
+      <form id="analyze">
+        <label>
+          Locality
+          <select id="locality" name="locality">
+            <option value="Kokapet">Kokapet</option>
+            <option value="Gachibowli">Gachibowli</option>
+            <option value="Financial District">Financial District</option>
+            <option value="Kondapur">Kondapur</option>
+          </select>
+        </label>
+        <button type="submit">Analyze</button>
+      </form>
+    </header>
+    <main>
+      <section class="kpis" id="kpis"></section>
+      <section class="grid">
+        <div class="panel">
+          <h2>Map</h2>
+          <div id="map"></div>
+        </div>
+        <div class="panel">
+          <h2>BHK mix</h2>
+          <div id="mix"></div>
+        </div>
+      </section>
+      <section class="panel">
+        <h2>Projects in view</h2>
+        <div id="table"></div>
+      </section>
+    </main>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.3/echarts.min.js"></script>
+    <script src="demo.js"></script>
+  </body>
+</html>
